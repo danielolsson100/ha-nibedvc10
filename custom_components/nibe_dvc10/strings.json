@@ -1,0 +1,94 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "NIBE DVC 10",
+        "description": "Enter the IP address of your NIBE DVC 10 ventilation unit on the local network.",
+        "data": {
+          "host": "IP Address"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to reach the NIBE DVC 10 at the given IP address. Check the IP and that UDP port 4000 is reachable.",
+      "unknown": "An unexpected error occurred. Check the Home Assistant logs for details."
+    },
+    "abort": {
+      "already_configured": "This NIBE DVC 10 device is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "NIBE DVC 10 Options",
+        "data": {
+          "host": "IP Address"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to reach the NIBE DVC 10 at the given IP address.",
+      "unknown": "An unexpected error occurred."
+    }
+  },
+  "entity": {
+    "switch": {
+      "power": {
+        "name": "Power"
+      }
+    },
+    "select": {
+      "fan_speed": {
+        "name": "Fan Speed",
+        "state": {
+          "low":    "Low",
+          "medium": "Medium",
+          "high":   "High"
+        }
+      },
+      "mode": {
+        "name": "Mode",
+        "state": {
+          "day":   "Day",
+          "night": "Night"
+        }
+      },
+      "airflow": {
+        "name": "Airflow Direction",
+        "state": {
+          "one_way": "Supply (one-way)",
+          "two_way": "Balanced (two-way)",
+          "in":      "Intake only"
+        }
+      }
+    },
+    "sensor": {
+      "sensor_fan_speed": {
+        "name": "Fan Speed",
+        "state": {
+          "low":    "Low",
+          "medium": "Medium",
+          "high":   "High"
+        }
+      },
+      "sensor_mode": {
+        "name": "Mode",
+        "state": {
+          "day":   "Day",
+          "night": "Night"
+        }
+      },
+      "sensor_airflow": {
+        "name": "Airflow Direction",
+        "state": {
+          "one_way": "Supply (one-way)",
+          "two_way": "Balanced (two-way)",
+          "in":      "Intake only"
+        }
+      },
+      "sensor_fan_manual_pct": {
+        "name": "Manual Fan Speed"
+      }
+    }
+  }
+}

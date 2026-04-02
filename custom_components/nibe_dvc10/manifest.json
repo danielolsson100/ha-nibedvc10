@@ -1,0 +1,12 @@
+{
+  "domain": "nibe_dvc10",
+  "name": "NIBE DVC 10",
+  "version": "0.0.5",
+  "config_flow": true,
+  "documentation": "https://github.com/danielolsson100/ha-nibedvc10",
+  "issue_tracker": "https://github.com/danielolsson100/ha-nibedvc10/issues",
+  "requirements": [],
+  "homeassistant": "2024.4.0",
+  "iot_class": "local_polling",
+  "codeowners": ["@danielolsson100"]
+}
